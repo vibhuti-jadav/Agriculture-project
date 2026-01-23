@@ -111,7 +111,7 @@ export const products: Product[] = [
 export const companyInfo = {
   name: "Sitaram Minerals",
   tagline: "Premium Soil Solutions for Better Farming",
-  phone: "100000000", // Replace with actual number
+  phone: "9998175105", // Replace with actual number
   email: "sitraramminerals5105@gmail.com", // Replace with actual email  
   whatsapp: "8200552655", // Replace with actual WhatsApp number
   address: "survey No.153 P1 P1, malpara, ta - vallabhipur,  Dist - bhavnagar.",
