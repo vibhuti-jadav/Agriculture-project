@@ -6,7 +6,7 @@ export const getWhatsAppLink = (productName?: string): string => {
   
   const message = productName
     ? `Hello, I want to buy ${productName}. Please provide more details.`
-    : "Hello, I'm interested in your soil products. Please provide more information.";
+    : "Hello, I'm interested in your mineral products. Please provide more information.";
   
   return `${baseUrl}${phone}?text=${encodeURIComponent(message)}`;
 };
@@ -18,7 +18,7 @@ export const getEmailLink = (productName?: string): string => {
   
   const body = productName
     ? `Hello,\n\nI am interested in purchasing ${productName}. Please provide more details about pricing and availability.\n\nThank you.`
-    : "Hello,\n\nI am interested in your soil products. Please send me more information.\n\nThank you.";
+    : "Hello,\n\nI am interested in your mineral products. Please send me more information.\n\nThank you.";
   
   return `mailto:${companyInfo.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };

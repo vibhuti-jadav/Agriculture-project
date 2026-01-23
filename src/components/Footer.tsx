@@ -27,12 +27,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              {/* <Leaf className="w-8 h-8" /> */}
-               <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10" />
+              <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10" loading="lazy" />
               <span className="font-display text-2xl font-bold">{companyInfo.name}</span>
             </div>
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">
-              {companyInfo.tagline}. We provide premium, organic soil products to help 
+              {companyInfo.tagline}. We provide premium, organic mineral products to help 
               farmers and gardeners achieve exceptional results while caring for the environment.
             </p>
             <div className="flex gap-4">
@@ -51,7 +50,6 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
@@ -69,7 +67,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="font-display font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-4">
@@ -92,7 +89,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-background/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-background/60 text-sm">
           <p>© {currentYear} {companyInfo.name}. All rights reserved.</p>
-          <p>Premium Soil Solutions for Better Farming</p>
+          <p>Premium Mineral Solutions for Better Farming</p>
         </div>
       </div>
     </footer>

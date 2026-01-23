@@ -6,7 +6,6 @@ const Contact = () => {
   return (
     <section id="contact" className="section-padding bg-background">
       <div className="container-custom">
-        {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Contact Us
@@ -21,10 +20,8 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
-          {/* Contact Info */}
           <div>
             <div className="space-y-6">
-              {/* WhatsApp - Primary CTA */}
               <a
                 href={getWhatsAppLink()}
                 target="_blank"
@@ -43,7 +40,6 @@ const Contact = () => {
                 </div>
               </a>
 
-              {/* Email */}
               <a
                 href={getEmailLink()}
                 className="flex items-center gap-4 p-6 bg-muted rounded-xl hover:bg-muted/80 transition-colors"
@@ -57,7 +53,6 @@ const Contact = () => {
                 </div>
               </a>
 
-              {/* Phone */}
               <a
                 href={`tel:${companyInfo.phone}`}
                 className="flex items-center gap-4 p-6 bg-muted rounded-xl hover:bg-muted/80 transition-colors"
@@ -71,7 +66,6 @@ const Contact = () => {
                 </div>
               </a>
 
-              {/* Address */}
               <div className="flex items-center gap-4 p-6 bg-muted rounded-xl">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
                   <MapPin className="w-7 h-7 text-primary" />
@@ -82,7 +76,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Hours */}
               <div className="flex items-center gap-4 p-6 bg-muted rounded-xl">
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center">
                   <Clock className="w-7 h-7 text-primary" />
@@ -95,7 +88,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map */}
           {/* <div className="rounded-xl overflow-hidden shadow-card h-[400px] lg:h-full min-h-[400px]">
   
             <iframe
@@ -106,14 +98,12 @@ const Contact = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="TerraGrow Location"
+              title="Sitaram Minerals Location"
             />
 
           </div> */}
 
 <div className="relative rounded-xl overflow-hidden shadow-card h-[400px] lg:h-full min-h-[400px]">
-  
-  {/* Google Map */}
   <iframe
     src={companyInfo.mapEmbed}
     width="100%"
@@ -124,7 +114,6 @@ const Contact = () => {
     title="Location"
   />
 
-  {/* Click Overlay */}
   <a
     href={companyInfo.mapLink}
     target="_blank"

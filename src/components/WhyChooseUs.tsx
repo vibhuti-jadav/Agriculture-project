@@ -37,7 +37,6 @@ const WhyChooseUs = () => {
   return (
     <section id="why-us" className="section-padding bg-primary text-primary-foreground">
       <div className="container-custom">
-        {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-secondary font-medium text-sm uppercase tracking-wider">
             Why Choose Us
@@ -46,12 +45,11 @@ const WhyChooseUs = () => {
             Sitaram Minerals Difference
           </h2>
           <p className="text-primary-foreground/80 max-w-2xl mx-auto">
-            We're committed to providing the best soil products and customer experience
+            We're committed to providing the best Minerals products and customer experience
             in the industry.
           </p>
         </div>
 
-        {/* Features Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
             <div

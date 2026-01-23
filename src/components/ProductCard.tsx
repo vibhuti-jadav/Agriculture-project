@@ -1,6 +1,5 @@
 import { Product } from "@/data/products";
 
-// Import product images
 import dolomiteLumps from "@/assets/product-dolomite-lumps.jpg";
 import dolomitePowder from "@/assets/product-dolomite-powder.jpg";
 import dolomiteGranules from "@/assets/product-dolomite-granules.jpg";
@@ -25,12 +24,12 @@ interface ProductCardProps {
 const ProductCard = ({ product, onViewDetails }: ProductCardProps) => {
   return (
     <div className="bg-card rounded-xl overflow-hidden shadow-card card-hover group">
-      {/* Product Image */}
       <div className="relative aspect-square overflow-hidden bg-muted">
         <img
           src={imageMap[product.image]}
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          loading="lazy"
         />
         <div className="absolute top-4 left-4">
           <span className="px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full">

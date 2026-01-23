@@ -5,7 +5,6 @@ const Testimonials = () => {
   return (
     <section className="section-padding bg-muted/50">
       <div className="container-custom">
-        {/* Section Header */}
         <div className="text-center mb-12">
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Testimonials
@@ -19,7 +18,6 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((testimonial) => (
             <div
@@ -28,19 +26,16 @@ const Testimonials = () => {
             >
               <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20" />
               
-              {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
                   <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
 
-              {/* Content */}
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 "{testimonial.content}"
               </p>
 
-              {/* Author */}
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center">
                   <span className="text-primary font-semibold text-lg">

@@ -2,7 +2,6 @@ import { X, MessageCircle, Mail, Check } from "lucide-react";
 import { Product } from "@/data/products";
 import { getWhatsAppLink, getEmailLink } from "@/lib/contact";
 
-// Import product images
 import dolomiteLumps from "@/assets/product-dolomite-lumps.jpg";
 import dolomitePowder from "@/assets/product-dolomite-powder.jpg";
 import dolomiteGranules from "@/assets/product-dolomite-granules.jpg";
@@ -44,12 +43,12 @@ const ProductModal = ({ product, onClose }: ProductModalProps) => {
         </button>
 
         <div className="grid md:grid-cols-2 gap-0">
-          {/* Product Image */}
           <div className="relative aspect-square md:aspect-auto bg-muted">
             <img
               src={imageMap[product.image]}
               alt={product.name}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
             <div className="absolute top-4 left-4">
               <span className="px-3 py-1 bg-primary text-primary-foreground text-sm font-medium rounded-full">
