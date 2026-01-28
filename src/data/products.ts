@@ -63,9 +63,9 @@ export const products: Product[] = [
 export const companyInfo = {
   name: "Sitaram Minerals",
   tagline: "Premium Mineral Solutions for Better Farming",
-  phone: "9998175105",
+  phone: "+919998175105",
   email: "sitraramminerals5105@gmail.com",
-  whatsapp: "9998175105",
+  whatsapp: "+919998175105",
   address: "survey No.153 P1 P1, malpara, ta - vallabhipur,  Dist - bhavnagar.",
   mapEmbed: "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5227.927861192907!2d71.93552769035179!3d22.09914740181128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1769163050042!5m2!1sen!2sin",
   mapLink: "https://www.google.com/maps?q=22.09914740181128,71.93552769035179"
