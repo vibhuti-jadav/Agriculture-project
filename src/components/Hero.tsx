@@ -26,8 +26,8 @@ const Hero = () => {
           </span>
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-display font-bold text-primary-foreground mb-6 leading-tight">
-             Minerals Solutions for{" "}
-            <span className="text-secondary">Better Farming</span>
+            Minerals That Work {" "}
+            <span className="text-secondary">Where It Matter</span>
           </h1>
           
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed">

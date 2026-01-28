@@ -27,7 +27,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10" loading="lazy" />
+              <img src="/src/assets/logo.png" alt="Logo" className="w-10 h-10"  />
               <span className="font-display text-2xl font-bold">{companyInfo.name}</span>
             </div>
             <p className="text-background/70 mb-6 max-w-md leading-relaxed">

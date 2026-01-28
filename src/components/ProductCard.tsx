@@ -3,6 +3,7 @@ import { Product } from "@/data/products";
 import dolomiteLumps from "@/assets/product-dolomite-lumps.jpg";
 import dolomitePowder from "@/assets/product-dolomite-powder.jpg";
 import dolomiteGranules from "@/assets/product-dolomite-granules.jpg";
+import limestonePowder from "@/assets/product-limestone-powder.jpg";
 import compost from "@/assets/product-compost.jpg";
 import gardenSoil from "@/assets/product-garden-soil.jpg";
 import perlite from "@/assets/product-perlite.jpg";
@@ -11,6 +12,7 @@ const imageMap: Record<string, string> = {
   "dolomite-lumps": dolomiteLumps,
   "dolomite-powder": dolomitePowder,
   "dolomite-granules": dolomiteGranules,
+  "limestone-powder": limestonePowder,
   "compost": compost,
   "garden-soil": gardenSoil,
   "perlite": perlite,

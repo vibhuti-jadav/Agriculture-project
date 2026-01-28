@@ -58,6 +58,22 @@ export const products: Product[] = [
     image: "dolomite-granules",
     category: "Granules"
   },
+    {
+    id: "limestone-powder",
+    name: "Limestone Powder",
+    shortDescription: "High-purity calcium carbite powder for soil pH correction and industrial use.",
+    fullDescription: "Our Limestone Powder is finely ground from premium quality limestone, providing an excellent source of calcium for agricultural and industrial applications. It effectively neutralizes acidic soils and provides essential calcium nutrients for healthy plant growth.",
+    benefits: [
+      "High calcium carbonate content",
+      "Effective soil pH neutralizer",
+      "Promotes healthy plant growth",
+      "Fine particle size for quick absorption",
+      "Suitable for all soil types"
+    ],
+    usage: "Apply 2-3 kg per 100 sq ft on acidic soils and mix thoroughly. Best applied before planting season. Water after application for faster results.",
+    image: "limestone-powder",
+    category: "Powder"
+  },
 ];
 
 export const companyInfo = {
