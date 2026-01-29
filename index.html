@@ -40,11 +40,11 @@
     <link rel="canonical" href="https://sitaramminerals.com" />
     <link rel="manifest" href="/manifest.json" />
 
-    <!-- JSON-LD Structured Data for Organization and Local Business -->
+    <!-- JSON-LD Structured Data: Organization + LocalBusiness -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": ["Organization","LocalBusiness"],
       "name": "Sitaram Minerals",
       "alternateName": "Sitaram Minerals India",
       "description": "Premium mineral products including dolomite granules, dolomite powder, dolomite lumps, vermicompost, and coco peat for sustainable agriculture",
@@ -56,43 +56,95 @@
         "https://www.instagram.com/sitaramminerals",
         "https://twitter.com/SitaramMinerals"
       ],
-      "contact": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "telephone": "+91-XXXXXXXXXX",
-        "url": "https://sitaramminerals.com/#contact"
+      "telephone": "+919998175105",
+      "email": "sitraramminerals5105@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "survey No.153 P1 P1, malpara, ta - vallabhipur",
+        "addressLocality": "Bhavnagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "",
+        "addressCountry": "IN"
       },
-      "areaServed": "India",
-      "knowsAbout": ["Dolomite", "Vermicompost", "Coco Peat", "Organic Fertilizer", "Sustainable Agriculture", "Mineral Amendments"],
-      "serviceType": "Mineral Products Supply"
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "telephone": "+919998175105",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["English","Hindi"]
+      }],
+      "priceRange": "Varies",
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }],
+      "areaServed": "IN",
+      "@id": "https://sitaramminerals.com/#organization"
     }
     </script>
 
-    <!-- JSON-LD Product Aggregation -->
+    <!-- JSON-LD Products (one entry per product) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Sitaram Minerals - Mineral Products",
-      "description": "Premium mineral products including dolomite granules, dolomite powder, vermicompost, and coco peat",
-      "url": "https://sitaramminerals.com/#products",
-      "mainEntity": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://sitaramminerals.com"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Products",
-            "item": "https://sitaramminerals.com/#products"
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://sitaramminerals.com/#products",
+          "name": "Sitaram Minerals - Mineral Products",
+          "description": "Premium mineral products including dolomite granules, dolomite powder, vermicompost, and coco peat",
+          "url": "https://sitaramminerals.com/#products",
+          "mainEntity": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type":"ListItem","position":1,"name":"Home","item":"https://sitaramminerals.com"},
+              {"@type":"ListItem","position":2,"name":"Products","item":"https://sitaramminerals.com/#products"}
+            ]
           }
-        ]
-      }
+        },
+        {
+          "@type": "Product",
+          "name": "Dolomite Lumps",
+          "description": "High-quality raw dolomite rocks for industrial and agricultural applications.",
+          "sku": "dolomite-lumps",
+          "image": "https://sitaramminerals.com/assets/dolomite-lumps.jpg",
+          "url": "https://sitaramminerals.com/products/dolomite-lumps",
+          "brand": {"@type":"Brand","name":"Sitaram Minerals"},
+          "offers": {"@type":"Offer","availability":"https://schema.org/InStock","url":"https://sitaramminerals.com/products/dolomite-lumps"}
+        },
+        {
+          "@type": "Product",
+          "name": "Dolomite Powder",
+          "description": "Finely ground dolomite for agriculture, paint, and industrial uses.",
+          "sku": "dolomite-powder",
+          "image": "https://sitaramminerals.com/assets/dolomite-powder.jpg",
+          "url": "https://sitaramminerals.com/products/dolomite-powder",
+          "brand": {"@type":"Brand","name":"Sitaram Minerals"},
+          "offers": {"@type":"Offer","availability":"https://schema.org/InStock","url":"https://sitaramminerals.com/products/dolomite-powder"}
+        },
+        {
+          "@type": "Product",
+          "name": "Dolomite Granules",
+          "description": "Easy-to-apply granulated dolomite for precision agricultural use.",
+          "sku": "dolomite-granules",
+          "image": "https://sitaramminerals.com/assets/dolomite-granules.jpg",
+          "url": "https://sitaramminerals.com/products/dolomite-granules",
+          "brand": {"@type":"Brand","name":"Sitaram Minerals"},
+          "offers": {"@type":"Offer","availability":"https://schema.org/InStock","url":"https://sitaramminerals.com/products/dolomite-granules"}
+        },
+        {
+          "@type": "Product",
+          "name": "Limestone Powder",
+          "description": "High-purity calcium carbite powder for soil pH correction and industrial use.",
+          "sku": "limestone-powder",
+          "image": "https://sitaramminerals.com/assets/limestone-powder.jpg",
+          "url": "https://sitaramminerals.com/products/limestone-powder",
+          "brand": {"@type":"Brand","name":"Sitaram Minerals"},
+          "offers": {"@type":"Offer","availability":"https://schema.org/InStock","url":"https://sitaramminerals.com/products/limestone-powder"}
+        }
+      ]
     }
     </script>
   </head>
