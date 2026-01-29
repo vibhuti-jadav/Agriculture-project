@@ -1,7 +1,7 @@
 {
-  "name": "Sitaram Minerals - Premium Organic Soil Solutions",
+  "name": "Sitaram Minerals - Premium Dolomite & Vermicompost for Sustainable Agriculture",
   "short_name": "Sitaram Minerals",
-  "description": "Premium organic soil products for sustainable agriculture and better crop yields",
+  "description": "Premium organic mineral products including dolomite granules, dolomite powder, vermicompost, and coco peat. Trusted by 100+ farmers for sustainable farming and better crop yields",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
@@ -22,7 +22,7 @@
       "purpose": "maskable"
     }
   ],
-  "categories": ["agriculture", "business"],
+  "categories": ["agriculture", "business", "ecommerce"],
   "screenshots": [
     {
       "src": "/logo.png",
